@@ -1,0 +1,14 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to TechLadies AFA Diary", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#welcome-to-techladies-afa-diary", 
+            "text": "", 
+            "title": "Welcome to TechLadies AFA Diary"
+        }
+    ]
+}
