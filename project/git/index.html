@@ -131,6 +131,8 @@
     
         <li class="main active"><a href="#git">Git</a></li>
         
+            <li><a href="#tutorials">Tutorials</a></li>
+        
             <li><a href="#workflow">Workflow</a></li>
         
     
@@ -139,26 +141,76 @@
                 <div class="col-md-9" role="main">
 
 <h1 id="git">Git</h1>
+<p>We are using <a href="http://www.git-scm.com">Git</a> as our version control system and
+<a href="https://github.com">GitHub</a> for hosting our repositories and for collaboration.</p>
+<h2 id="tutorials">Tutorials</h2>
+<p>To learn the basics of Git we worked through the following tutorials:</p>
+<ul>
+<li><a href="https://try.github.io">https://try.github.io</a></li>
+<li><a href="https://guides.github.com/activities/hello-world/">https://guides.github.com/activities/hello-world/</a></li>
+<li><a href="https://github.com/git-game/git-game">https://github.com/git-game/git-game</a></li>
+</ul>
+<p>We also participated in a three-hour workshop conducted by the organizers of
+the <a href="http://www.meetup.com/Grumpy-Gits-SG/">Grumpy Gits SG User Group</a>.</p>
+<p><strong>Warning</strong>: Learning Git on your own is a difficult task, because there are
+many different commands that you need to memorize. To make things worse, there
+is one command called "checkout" that does at least three completely different
+things and some of those things don't even have anything to do with "checking
+something out.</p>
+<p>There are also dozens of ways to orchestrate all those many commands. Basically
+every company out there has their own internal workflow, therefore you will not
+find the one definite tutorial that teaches you how to do it and if you ask
+questions, three people will give you three different answers.</p>
+<p>You should definitely team up with a mentor who can guide you and work through a
+few test-scenarios with you and ultimately you need to understand what Git is
+doing on your hard disk in order to really have confidence in whatever workflow
+you decided to use.</p>
 <h2 id="workflow">Workflow</h2>
+<p>In order to collaborate on this repository, we will stick to a simplified
+workflow that has only the <code>master</code> branch as a stable branch.</p>
+<p>This means, whatever we merge into <code>master</code> should be good. At all times must we
+be confident that the <code>master</code> branch can be deployed by using the
+<code>mkdocs gh-deploy</code> command.</p>
+<p>In plain English, our workflow works as follows: When you decide to create a
+change, you first pull the latest version of the <code>master</code> branch from GitHub.
+Then you create a feature branch and make your changes. When you are done, you
+push your feature branch to GitHub so that the team can make a code-review.</p>
 <ol>
-<li>git co master</li>
-<li>git pull (see if others have made changes in the meantime)</li>
-<li>git co -b feature_branch</li>
+<li><code>git co master</code> (switch to master branch)</li>
+<li><code>git pull</code> (get the latest version of the master branch)</li>
+<li><code>git co -b feature_branch</code> (create your own feature branch)</li>
 <li>work work work work work work</li>
-<li>git add .</li>
-<li>git commit</li>
-<li>git push origin feature_branch (to share your work with the team on github)</li>
+<li><code>git add .</code> (add your changes to the staging area)</li>
+<li><code>git commit</code> (commit your changes)</li>
+<li><code>git push origin feature_branch</code> (push your feature branch to GitHub)</li>
 </ol>
-<p>When you are done with work</p>
+<p>Your mentor will usually do this, but for the sake of completeness, here is how
+we merge your changes back into the <code>master</code> branch when you have passed the
+code-review:</p>
+<p>First we pull the latest <code>master</code> branch just to be sure that we are up to
+date. Then we go into the feature branch and try to merge the <code>master</code> branch
+into the feature branch. We do this because other team members might have
+pushed to the <code>master</code> branch while you were working on your feature and there
+might be merge conflicts if both members worked on the same files. We want to
+resolve those conflicts in the feature branch, just to be sure that we don't
+accidentally mess up the master branch during the conflict resolution.</p>
+<p>Most of the time, there won't be any conflicts. In that case, we will switch
+back into the <code>master</code> branch and then merge the feature branch with the
+<code>--no-ff</code> flag into the <code>master</code> branch. The <code>--no-ff</code> makes sure that we can
+see "a bump" in the diagram view of our repository, so in the future we can
+still tell that a bunch of commits have all been made inside a certain
+feature branch. Once the feature branch has been merged into the master branch,
+it can be deleted locally and on GitHub.</p>
 <ol>
-<li>git co master</li>
-<li>git pull</li>
-<li>git co feature_branch</li>
-<li>git merge master (resolve merge conflicts, if any)</li>
-<li>git co master</li>
-<li>git merge --no-ff feature_branch</li>
-<li>git push</li>
-<li>git branch -d feature_branch (delete the feature branch)</li>
+<li><code>git co master</code> (switch to master branch)</li>
+<li><code>git pull</code> (get latest version of master branch)</li>
+<li><code>git co feature_branch</code> (switch to feature branch)</li>
+<li><code>git merge master</code> (resolve merge conflicts, if any)</li>
+<li><code>git co master</code> (switch back to master branch)</li>
+<li><code>git merge --no-ff feature_branch</code> (merge the feature branch)</li>
+<li><code>git push</code> (push new master branch to GitHub)</li>
+<li><code>git branch -d feature_branch</code> (delete the feature branch locally)</li>
+<li><code>git push origin :feature_branch</code> (delete feature branch on GitHub)</li>
 </ol></div>
             
         </div>
