@@ -12,7 +12,7 @@
 	<title>TechLadies AFA Diary</title>
 
         <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="./css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
         <link href="./css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/highlight.css">
 
@@ -33,6 +33,14 @@
         <!-- Collapsed navigation -->
         <div class="navbar-header">
             
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
 
             <!-- Main title -->
             <a class="navbar-brand" href=".">TechLadies AFA Diary</a>
@@ -41,6 +49,56 @@
         <!-- Expanded navigation -->
         <div class="navbar-collapse collapse">
             
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li class="active">
+                        <a href=".">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="project/git/">Git</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="project/ansible/">Ansible</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="project/django/">Django</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="project/html/">HTML / CSS</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="glossary/">Glossary</a>
+                    </li>
+                
+                
+                </ul>
+            
 
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -48,6 +106,17 @@
                         <i class="fa fa-search"></i> Search
                     </a>
                 </li>
+                
+                    <li class="disabled">
+                        <a rel="next" >
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="project/git/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
                 
                 
             </ul>
@@ -113,6 +182,6 @@
 </html>
 
 <!--
-MkDocs version : 0.15.2
-Build Date UTC : 2016-02-18 09:40:28.578501
+MkDocs version : 0.14.0
+Build Date UTC : 2016-02-20 12:56:14.890479
 -->

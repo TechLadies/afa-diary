@@ -4,7 +4,43 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-02-18</lastmod>
+     <lastmod>2016-02-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>None/project/git/</loc>
+     <lastmod>2016-02-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/project/ansible/</loc>
+     <lastmod>2016-02-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/project/django/</loc>
+     <lastmod>2016-02-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/project/html/</loc>
+     <lastmod>2016-02-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>None/glossary/</loc>
+     <lastmod>2016-02-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

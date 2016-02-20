@@ -9,6 +9,96 @@
             "location": "/#welcome-to-techladies-afa-diary", 
             "text": "", 
             "title": "Welcome to TechLadies AFA Diary"
+        }, 
+        {
+            "location": "/project/git/", 
+            "text": "Git\n\n\nWorkflow\n\n\n\n\ngit co master\n\n\ngit pull (see if others have made changes in the meantime)\n\n\ngit co -b feature_branch\n\n\nwork work work work work work\n\n\ngit add .\n\n\ngit commit\n\n\ngit push origin feature_branch (to share your work with the team on github)\n\n\n\n\nWhen you are done with work\n\n\n\n\ngit co master\n\n\ngit pull\n\n\ngit co feature_branch\n\n\ngit merge master (resolve merge conflicts, if any)\n\n\ngit co master\n\n\ngit merge --no-ff feature_branch\n\n\ngit push\n\n\ngit branch -d feature_branch (delete the feature branch)", 
+            "title": "Git"
+        }, 
+        {
+            "location": "/project/git/#git", 
+            "text": "", 
+            "title": "Git"
+        }, 
+        {
+            "location": "/project/git/#workflow", 
+            "text": "git co master  git pull (see if others have made changes in the meantime)  git co -b feature_branch  work work work work work work  git add .  git commit  git push origin feature_branch (to share your work with the team on github)   When you are done with work   git co master  git pull  git co feature_branch  git merge master (resolve merge conflicts, if any)  git co master  git merge --no-ff feature_branch  git push  git branch -d feature_branch (delete the feature branch)", 
+            "title": "Workflow"
+        }, 
+        {
+            "location": "/project/ansible/", 
+            "text": "", 
+            "title": "Ansible"
+        }, 
+        {
+            "location": "/project/django/", 
+            "text": "", 
+            "title": "Django"
+        }, 
+        {
+            "location": "/project/html/", 
+            "text": "", 
+            "title": "HTML / CSS"
+        }, 
+        {
+            "location": "/glossary/", 
+            "text": "Glossary\n\n\nDuring our journey of learning how to build a full-stack Django project,\nwe will learn many new technical terms. We will try to keep track of them\nin this glossary.\n\n\nBranch\n\n\nCheckout\n\n\nCommit\n\n\nFull Stack\n\n\nGit\n\n\nMaster Branch\n\n\nMerge\n\n\nPull\n\n\nPush\n\n\nRebase", 
+            "title": "Glossary"
+        }, 
+        {
+            "location": "/glossary/#glossary", 
+            "text": "During our journey of learning how to build a full-stack Django project,\nwe will learn many new technical terms. We will try to keep track of them\nin this glossary.", 
+            "title": "Glossary"
+        }, 
+        {
+            "location": "/glossary/#branch", 
+            "text": "", 
+            "title": "Branch"
+        }, 
+        {
+            "location": "/glossary/#checkout", 
+            "text": "", 
+            "title": "Checkout"
+        }, 
+        {
+            "location": "/glossary/#commit", 
+            "text": "", 
+            "title": "Commit"
+        }, 
+        {
+            "location": "/glossary/#full-stack", 
+            "text": "", 
+            "title": "Full Stack"
+        }, 
+        {
+            "location": "/glossary/#git", 
+            "text": "", 
+            "title": "Git"
+        }, 
+        {
+            "location": "/glossary/#master-branch", 
+            "text": "", 
+            "title": "Master Branch"
+        }, 
+        {
+            "location": "/glossary/#merge", 
+            "text": "", 
+            "title": "Merge"
+        }, 
+        {
+            "location": "/glossary/#pull", 
+            "text": "", 
+            "title": "Pull"
+        }, 
+        {
+            "location": "/glossary/#push", 
+            "text": "", 
+            "title": "Push"
+        }, 
+        {
+            "location": "/glossary/#rebase", 
+            "text": "", 
+            "title": "Rebase"
         }
     ]
 }

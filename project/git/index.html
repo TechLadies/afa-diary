@@ -7,14 +7,14 @@
         
         
         
-        <link rel="shortcut icon" href="./img/favicon.ico">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
 
-	<title>TechLadies AFA Diary</title>
+	<title>Git - TechLadies AFA Diary</title>
 
-        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link href="./css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/highlight.css">
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -43,7 +43,7 @@
             
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">TechLadies AFA Diary</a>
+            <a class="navbar-brand" href="../..">TechLadies AFA Diary</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -54,36 +54,36 @@
                 
                 
                     <li >
-                        <a href=".">Home</a>
+                        <a href="../..">Home</a>
                     </li>
                 
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             
-<li >
-    <a href="project/git/">Git</a>
+<li class="active">
+    <a href="./">Git</a>
 </li>
 
                         
                             
 <li >
-    <a href="project/ansible/">Ansible</a>
+    <a href="../ansible/">Ansible</a>
 </li>
 
                         
                             
 <li >
-    <a href="project/django/">Django</a>
+    <a href="../django/">Django</a>
 </li>
 
                         
                             
 <li >
-    <a href="project/html/">HTML / CSS</a>
+    <a href="../html/">HTML / CSS</a>
 </li>
 
                         
@@ -93,7 +93,7 @@
                 
                 
                     <li >
-                        <a href="glossary/">Glossary</a>
+                        <a href="../../glossary/">Glossary</a>
                     </li>
                 
                 
@@ -107,13 +107,13 @@
                     </a>
                 </li>
                 
-                    <li class="disabled">
-                        <a rel="next" >
+                    <li >
+                        <a rel="next" href="../..">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li class="disabled">
-                        <a rel="prev" >
+                    <li >
+                        <a rel="prev" href="../ansible/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -126,15 +126,41 @@
 
         <div class="container">
             
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#git">Git</a></li>
+        
+            <li><a href="#workflow">Workflow</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
-    </div>
-
-
+<h1 id="git">Git</h1>
+<h2 id="workflow">Workflow</h2>
+<ol>
+<li>git co master</li>
+<li>git pull (see if others have made changes in the meantime)</li>
+<li>git co -b feature_branch</li>
+<li>work work work work work work</li>
+<li>git add .</li>
+<li>git commit</li>
+<li>git push origin feature_branch (to share your work with the team on github)</li>
+</ol>
+<p>When you are done with work</p>
+<ol>
+<li>git co master</li>
+<li>git pull</li>
+<li>git co feature_branch</li>
+<li>git merge master (resolve merge conflicts, if any)</li>
+<li>git co master</li>
+<li>git merge --no-ff feature_branch</li>
+<li>git push</li>
+<li>git branch -d feature_branch (delete the feature branch)</li>
+</ol></div>
+            
         </div>
 
         <footer class="col-md-12">
@@ -143,12 +169,12 @@
             <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
 
-        <script src="./js/jquery-1.10.2.min.js"></script>
-        <script src="./js/bootstrap-3.0.3.min.js"></script>
-        <script src="./js/highlight.pack.js"></script>
-        <script>var base_url = '.';</script>
-        <script data-main="./mkdocs/js/search.js" src="./mkdocs/js/require.js"></script>
-        <script src="./js/base.js"></script>
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
             <div class="modal-dialog">
