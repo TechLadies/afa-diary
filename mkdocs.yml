@@ -1,4 +1,9 @@
 site_name: TechLadies AFA Diary
 pages:
 - Home: index.md
+- Project:
+    - Git: project/git.md
+    - Ansible: project/ansible.md
+    - Django: project/django.md
+    - HTML / CSS: project/html.md
 - Glossary: glossary.md
