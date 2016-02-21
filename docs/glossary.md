@@ -47,6 +47,8 @@ a team, this helps to keep track about who did what and when.
 
 **Hash**
 
+A hash is a unique ID that is generated with each commit.
+
 **Master Branch**
 
 Master branches are stable branches. These are the ones to be shared amongst collaborators of a project, which ought to stay the way they are. Any modifications should go into volatile branches (See also: Branch) to avoid affecting the repository.
