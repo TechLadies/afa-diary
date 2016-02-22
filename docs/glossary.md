@@ -34,10 +34,20 @@ a team, this helps to keep track about who did what and when.
 
 **Pull**
 
+Pull is to extract the latest version of the master branch and other branches from Git so that the user can work off the latest version of a repository.
+
 **Push**
+
+When a user is done with making changes to their branch they can "push" their changes to the master. By doing so, they update the master with the changes that they have committed.
 
 **Rebase**
 
 **Repository**
 
+**Staged**
+
+When a user has made changes to a repository they can add those changes. By doing so the user "stages" their changes. Only staged changes can be committed.
+
 **Terminal**
+
+The Terminal is the part of the computer where programmers can program information and data into the computer.
