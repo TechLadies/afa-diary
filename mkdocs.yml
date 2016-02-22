@@ -1,6 +1,7 @@
 site_name: TechLadies AFA Diary
 pages:
 - Home: index.md
+- Prerequisites: prerequisites.md
 - Project:
     - Git: project/git.md
     - Ansible: project/ansible.md
