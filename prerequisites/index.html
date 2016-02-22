@@ -9,7 +9,7 @@
         
         <link rel="shortcut icon" href="../img/favicon.ico">
 
-	<title>Glossary - TechLadies AFA Diary</title>
+	<title>Prerequisites - TechLadies AFA Diary</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
@@ -59,8 +59,8 @@
                 
                 
                 
-                    <li >
-                        <a href="../prerequisites/">Prerequisites</a>
+                    <li class="active">
+                        <a href="./">Prerequisites</a>
                     </li>
                 
                 
@@ -98,8 +98,8 @@
                 
                 
                 
-                    <li class="active">
-                        <a href="./">Glossary</a>
+                    <li >
+                        <a href="../glossary/">Glossary</a>
                     </li>
                 
                 
@@ -114,12 +114,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../project/html/">
+                        <a rel="next" href="..">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
-                    <li class="disabled">
-                        <a rel="prev" >
+                    <li >
+                        <a rel="prev" href="../project/git/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -135,74 +135,109 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#glossary">Glossary</a></li>
+        <li class="main active"><a href="#setup-your-machine">Setup Your Machine</a></li>
+        
+            <li><a href="#1-iterm2">1. iTerm2</a></li>
+        
+            <li><a href="#2-zsh">2. ZSH</a></li>
+        
+            <li><a href="#3-homebrew">3. Homebrew</a></li>
+        
+            <li><a href="#4-atom-editor">4. Atom Editor</a></li>
+        
+            <li><a href="#5-git">5. Git</a></li>
+        
+            <li><a href="#6-slack">6. Slack</a></li>
+        
+            <li><a href="#7-python">7. Python</a></li>
+        
+            <li><a href="#8-virtualenv-virtualenvwrapper">8. Virtualenv &amp; virtualenvwrapper</a></li>
+        
+            <li><a href="#and-thats-a-wrap">And that's a wrap!</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="glossary">Glossary</h1>
-<p>During our journey of learning how to build a full-stack Django project,
-we will learn many new technical terms. We will try to keep track of them
-in this glossary.</p>
-<p><strong>Ansible</strong></p>
-<p>Ansible is a tool to "provision" servers. That means it helps to install
-software on a server in an automated, scripted and repeatable way.</p>
-<p><strong>Branch</strong></p>
-<p>A branch is the parallel version of the Master Branch (See also: Master Branch). The Master Branch is copied and branched out into a branch. Work on or modify the code here, as changes will not affect the main repository. Branches can also be used for bug fixing, as the work here does not affect the main repository until merged and committed. Merge the branch into the Master Branch only after all changes are made and it is ready to publish.</p>
-<p>There can be several branches in a repository. Branches can be deleted after the merge is complete. Branches can also be referred to as volatile branches.</p>
-<p>The command to create a new branch is <code>git branch new_branch name</code>. Check existing branches and which branch you are currently on by using the command <code>git branch</code>. The branch you are currently on will be indicated by an asterisk before its name.</p>
-<p><strong>Clone</strong></p>
-<p>A clone is a copy of a repository that lives on your local computer once copied from a remote server. The command to clone a remote server is <code>git clone [url of server]</code>. Changes have to be pushed (See also: Push) onto the remote server, to be able to see them on the remote server.</p>
-<p><strong>Checkout</strong></p>
-<p>Checkout in Git is tricky, as it serves multiple uses.</p>
-<p>One use is to switch from to a branch, as seen in <code>git checkout branch_name</code>. Create a new branch and checkout to it at the same time by using the command <code>git checkout -b new_branch_name</code>.</p>
-<p>Checkout can also be used to return the file to a previous version. <code>git checkout &lt;commit&gt;</code> returns the file to the version of the particular commit. <commit> is the first 7 character of your commit hash (See also: Hash), which helps to identity which particular commit it is.</p>
-<p><strong>Commit</strong></p>
-<p>Commit is the action to apply your changed and staged files. To make a commit
-type <code>git commit -m "Description about your commit"</code></p>
-<p><strong>Django</strong></p>
-<p>Django is a high-level Python Web framework that encourages rapid development
-and clean, pragmatic design. It's free and open source.</p>
-<p><strong>Droplet</strong></p>
-<p>Droplet refers to a virtual private server instance at DigitalOcean that is
-setup and can be configured to user's need such as CPU size, memory, hard disk
-capacity, installed OS, and more.</p>
-<p><strong>Full Stack</strong></p>
-<p>A web application consists of many layers for instance: user interface, business
-logic, servers, databases, operating systems. Each layer has different
-technology which is what we call a <em>stack</em>. This entire web application is
-therefore called Full Stack.</p>
-<p><strong>Git</strong></p>
-<p>Git is a version control system. You can turn a normal folder on your hard disk
-into a "repository". When you do that, Git will keep track of all changes made
-to all files. You can then "commit" your changes and review them in a log or
-even go back to an older version of your files. When working on a project with
-a team, this helps to keep track about who did what and when.</p>
-<p><strong>Hash</strong></p>
-<p>A hash is a unique ID that is generated with each commit.</p>
-<p><strong>Master Branch</strong></p>
-<p>Master branches are stable branches. These are the ones to be shared amongst collaborators of a project, which ought to stay the way they are. Any modifications should go into volatile branches (See also: Branch) to avoid affecting the repository.</p>
-<p><strong>Merge</strong></p>
-<p>Merge is git action of joining two or more development histories together.</p>
-<p><strong>Pull</strong></p>
-<p>Pull is to extract the latest version of the master branch and other branches from Git so that the user can work off the latest version of a repository.</p>
-<p><strong>Push</strong></p>
-<p>When a user is done with making changes to their branch they can "push" their changes to the master. By doing so, they update the master with the changes that they have committed.</p>
-<p><strong>Rebase</strong></p>
-<p>Rebasing is the process of moving a branch to a new base commit.
-From a content perspective, rebasing really is just moving a branch from one
-commit to another. But internally, Git accomplishes this by creating new
-commits and applying them to the specified base—it’s literally rewriting
-your project history.</p>
-<p><strong>Repository</strong></p>
-<p>Repository is where git stores information about a project files and its
-history.</p>
-<p><strong>Staged</strong></p>
-<p>When a user has made changes to a repository they can add those changes. By doing so the user "stages" their changes. Only staged changes can be committed.</p>
-<p><strong>Terminal</strong></p>
-<p>The Terminal is the part of the computer where programmers can program information and data into the computer.</p></div>
+<h1 id="setup-your-machine">Setup Your Machine</h1>
+<p>Here are list of applications required to setup development environment on Mac.
+It's also recommended that you refer to our Glossary page</p>
+<h2 id="1-iterm2">1. iTerm2</h2>
+<p>Download iTerm2 from <a href="http://iterm2.com">http://iterm2.com</a>. Drag and drop the
+app into your Applications folder.</p>
+<h2 id="2-zsh">2. ZSH</h2>
+<ol>
+<li>Open iTerm2 window.</li>
+<li>Go to <a href="http://ohmyz.sh">http://ohmyz.sh</a>, scroll down, copy and paste the
+installation line into iTerm2 window (we'll call this <strong>terminal</strong>).</li>
+<li>If Zshell is not activated immediately, quit iTerm2 and open again.</li>
+</ol>
+<h2 id="3-homebrew">3. Homebrew</h2>
+<p>Go to <a href="http://brew.sh">http://brew.sh</a>, find, copy and paste the installation
+line into terminal.</p>
+<p>To make sure it's installed properly, type <code>which brew</code> and it should reply
+you with something like <code>/usr/local/bin/brew</code></p>
+<h2 id="4-atom-editor">4. Atom Editor</h2>
+<p>Download Atom from <a href="http://atom.io">http://atom.io</a>. Drag and drop the app into
+your Applications folder.
+If you start the editor on OSX for the first time, you should click at
+"Atom &gt; Install Shell Commands"</p>
+<p>Optionally, you can install these packages to help us deal with Python syntax:
+1. <a href="https://atom.io/packages/autocomplete-python">autocomplete-python</a>
+1. <a href="https://atom.io/packages/linter-flake8">linter-flake8</a>
+Also checkout the installation guide for each package.</p>
+<h2 id="5-git">5. Git</h2>
+<p>We'll be using local git and Github.</p>
+<ul>
+<li>
+<p>Check if you already have git by typing <code>git</code> in terminal. If you get a ton
+of output, you already have it. If not, install via Brew by typing
+<code>brew install git</code></p>
+</li>
+<li>
+<p>If you're not familiar on how git works, a good interactive tutorial can be
+found on
+<a href="https://try.github.io/levels/1/challenges/1">https://try.github.io/levels/1/challenges/1</a></p>
+</li>
+<li>Create a profile on <a href="https://github.com">GitHub</a></li>
+</ul>
+<h2 id="6-slack">6. Slack</h2>
+<p>Team TechLadies uses <a href="https://slack.com/">Slack</a> for daily communications and
+it has downloadable Mac app <a href="https://slack.com/downloads">here</a></p>
+<h2 id="7-python">7. Python</h2>
+<p>Mac comes with Python. Try typing <code>python --version</code> into terminal and
+it will show you which version installed. Alternatively, you can also install
+via Homebrew by typing <code>brew install python</code>.</p>
+<p>The difference is that if you install via Homebrew, the Python binary will be
+placed under <code>/usr/local/bin/python</code> and it also automatically install <code>pip</code>
+Python package manager.</p>
+<h2 id="8-virtualenv-virtualenvwrapper">8. Virtualenv &amp; virtualenvwrapper</h2>
+<p>Steps to configure Virtualenv:
+1. From terminal, type <code>sudo pip install virtualenv</code> wait until completed.
+2. Next, type <code>sudo pip install virtualenvwrapper</code> wait until completed.
+3. Next, type <code>export WORKON_HOME=~/Envs</code>. This will place all your virtualenv
+under your <code>HOME_DIRECTORY/Envs</code>
+4. Next, type <code>echo 'export WORKON_HOME=~/Envs' &gt;&gt; ~/.zshrc</code>
+5. Next, type <code>echo 'source /usr/local/bin/virtualenvwrapper.sh' &gt;&gt; ~/.zshrc</code>
+6. Next, type <code>mkdir -p $WORKON_HOME</code>
+7. Next, type <code>source /usr/local/bin/virtualenvwrapper.sh</code></p>
+<h3 id="test-virtualenv-virtualenvwrapper">Test virtualenv &amp; virtualenvwrapper</h3>
+<ol>
+<li>Open new terminal session and type <code>mkvirtualenv myproject</code>.
+It should output few lines and the prompt on the left will indicate your
+current active virtualenv which is <code>(myproject)</code></li>
+<li>To exit the virtualenv, type <code>deactivate</code>, the prompt will go normal again.</li>
+<li>To enter the virtualenv again, type <code>workon myproject</code>.</li>
+<li>You can create more virtualenv and to list all virtualenv you have,
+type <code>workon</code> only.</li>
+<li>To delete a virtualenv, type <code>rmvirtualenv myproject</code></li>
+</ol>
+<p><img alt="Screenshot" src="http://i.imgur.com/WMD1yfZ.png" /></p>
+<p>Any Python packages installed in this virtualenv only valid within this
+virtualenv. To list the packages installed, type <code>pip freeze</code>.</p>
+<h2 id="and-thats-a-wrap">And that's a wrap!</h2>
+<p>Looks like we're good to go!</p></div>
             
         </div>
 

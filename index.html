@@ -59,6 +59,12 @@
                 
                 
                 
+                    <li >
+                        <a href="prerequisites/">Prerequisites</a>
+                    </li>
+                
+                
+                
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Project <b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -113,7 +119,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="project/git/">
+                        <a rel="prev" href="prerequisites/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -129,14 +135,51 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#welcome-to-techladies-afa-diary">Welcome to TechLadies AFA Diary</a></li>
+        <li class="main active"><a href="#welcome-to-techladies-afas-coder-diary">Welcome to TechLadies AFA's Coder Diary</a></li>
+        
+            <li><a href="#how-to-contribute-to-this-diary">How to contribute to this diary</a></li>
+        
+            <li><a href="#useful-pages-for-markdown-syntax">Useful pages for Markdown Syntax</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-techladies-afa-diary">Welcome to TechLadies AFA Diary</h1></div>
+<h1 id="welcome-to-techladies-afas-coder-diary">Welcome to TechLadies AFA's Coder Diary</h1>
+<p>This repository is a little documentation about our learning-journey when
+creating the Asian Film Archive's submissions application as part of the
+<a href="http://techladies.co">TechLadies</a> programme.</p>
+<h2 id="how-to-contribute-to-this-diary">How to contribute to this diary</h2>
+<p>We are using <a href="http://www.mkdocs.org">MkDocs</a> to create and organize this diary.
+Follow these steps to add entry:</p>
+<ol>
+<li>Clone this repo to your local folder:
+<code>git clone https://github.com/TechLadies/afa-diary.git</code> or if
+you already have a clone, pull the latest changes: <code>git pull</code></li>
+<li>Change your directory to afa-diary: <code>cd afa-diary</code></li>
+<li>Create Virtualenv named mkdocs: <code>mkvirtualenv mkdocs</code></li>
+<li>Install MkDocs and other requirements using pip:
+<code>pip install -r requirements.txt</code></li>
+<li>At this point, you can preview your local MkDocs site by running
+server command: <code>mkdocs server</code>.
+You should see something like this and then use browser to go to
+<a href="http://localhost:8000">http://localhost:8000</a></li>
+</ol>
+<p><img alt="Screenshot" src="http://i.imgur.com/UePJaxN.png" /></p>
+<ol>
+<li>Make your changes locally and use localhost to preview the changes.
+Remember to add your page name and corresponding .md file to <code>mkdocs.yml</code></li>
+<li>Stage the changed files: <code>git add .</code></li>
+<li>Commit to git: <code>git commit -m "Your descriptive message"</code></li>
+<li>Push to Github repo: <code>git push -u origin master</code></li>
+</ol>
+<h2 id="useful-pages-for-markdown-syntax">Useful pages for Markdown Syntax</h2>
+<ol>
+<li><a href="https://help.github.com/articles/basic-writing-and-formatting-syntax/">Basic writing and formatting syntax - Github</a></li>
+<li><a href="https://help.github.com/articles/creating-and-highlighting-code-blocks/">Creating and highlighting code blocks - GitHub</a></li>
+<li><a href="https://help.github.com/articles/working-with-advanced-formatting/">Advanced formatting - Github</a></li>
+</ol></div>
             
         </div>
 
@@ -183,5 +226,5 @@
 
 <!--
 MkDocs version : 0.15.2
-Build Date UTC : 2016-02-22 02:27:18.610360
+Build Date UTC : 2016-02-22 14:26:37.722169
 -->
