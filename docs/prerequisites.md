@@ -32,9 +32,18 @@ If you start the editor on OSX for the first time, you should click at
 "Atom > Install Shell Commands"
 
 Optionally, you can install these packages to help us deal with Python syntax:
+
 1. [autocomplete-python](https://atom.io/packages/autocomplete-python)
 1. [linter-flake8](https://atom.io/packages/linter-flake8)
-Also checkout the installation guide for each package.
+
+To install Packages, press `⌘+,` or from menu, `Atom -> Preferences`.
+Click Install tab and search the package name, then click Install.
+
+Click Packages tab to show or remove packages installed. It's safe to try one package and remove it so don't worry about that.
+
+![Screenshot](http://i.imgur.com/CnanlGA.png)
+
+
 
 ##5. Git
 
@@ -50,10 +59,12 @@ found on
 - Create a profile on [GitHub](https://github.com)
 
 ##6. Slack
+
 Team TechLadies uses [Slack](https://slack.com/) for daily communications and
 it has downloadable Mac app [here](https://slack.com/downloads)
 
 ##7. Python
+
 Mac comes with Python. Try typing `python --version` into terminal and
 it will show you which version installed. Alternatively, you can also install
 via Homebrew by typing `brew install python`.
@@ -62,9 +73,12 @@ The difference is that if you install via Homebrew, the Python binary will be
 placed under `/usr/local/bin/python` and it also automatically install `pip`
 Python package manager.
 
+We are using Python 2.7.11 for this project.
+
 ##8. Virtualenv & virtualenvwrapper
 
 Steps to configure Virtualenv:
+
 1. From terminal, type `sudo pip install virtualenv` wait until completed.
 2. Next, type `sudo pip install virtualenvwrapper` wait until completed.
 3. Next, type `export WORKON_HOME=~/Envs`. This will place all your virtualenv
