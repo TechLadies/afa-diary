@@ -12,7 +12,7 @@
 	<title>Prerequisites - TechLadies AFA Diary</title>
 
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/highlight.css">
 
@@ -183,10 +183,15 @@ you with something like <code>/usr/local/bin/brew</code></p>
 your Applications folder.
 If you start the editor on OSX for the first time, you should click at
 "Atom &gt; Install Shell Commands"</p>
-<p>Optionally, you can install these packages to help us deal with Python syntax:
-1. <a href="https://atom.io/packages/autocomplete-python">autocomplete-python</a>
-1. <a href="https://atom.io/packages/linter-flake8">linter-flake8</a>
-Also checkout the installation guide for each package.</p>
+<p>Optionally, you can install these packages to help us deal with Python syntax:</p>
+<ol>
+<li><a href="https://atom.io/packages/autocomplete-python">autocomplete-python</a></li>
+<li><a href="https://atom.io/packages/linter-flake8">linter-flake8</a></li>
+</ol>
+<p>To install Packages, press <code>⌘+,</code> or from menu, <code>Atom -&gt; Preferences</code>.
+Click Install tab and search the package name, then click Install.</p>
+<p>Click Packages tab to show or remove packages installed. It's safe to try one package and remove it so don't worry about that.</p>
+<p><img alt="Screenshot" src="http://i.imgur.com/CnanlGA.png" /></p>
 <h2 id="5-git">5. Git</h2>
 <p>We'll be using local git and Github.</p>
 <ul>
@@ -212,16 +217,19 @@ via Homebrew by typing <code>brew install python</code>.</p>
 <p>The difference is that if you install via Homebrew, the Python binary will be
 placed under <code>/usr/local/bin/python</code> and it also automatically install <code>pip</code>
 Python package manager.</p>
+<p>We are using Python 2.7.11 for this project.</p>
 <h2 id="8-virtualenv-virtualenvwrapper">8. Virtualenv &amp; virtualenvwrapper</h2>
-<p>Steps to configure Virtualenv:
-1. From terminal, type <code>sudo pip install virtualenv</code> wait until completed.
-2. Next, type <code>sudo pip install virtualenvwrapper</code> wait until completed.
-3. Next, type <code>export WORKON_HOME=~/Envs</code>. This will place all your virtualenv
-under your <code>HOME_DIRECTORY/Envs</code>
-4. Next, type <code>echo 'export WORKON_HOME=~/Envs' &gt;&gt; ~/.zshrc</code>
-5. Next, type <code>echo 'source /usr/local/bin/virtualenvwrapper.sh' &gt;&gt; ~/.zshrc</code>
-6. Next, type <code>mkdir -p $WORKON_HOME</code>
-7. Next, type <code>source /usr/local/bin/virtualenvwrapper.sh</code></p>
+<p>Steps to configure Virtualenv:</p>
+<ol>
+<li>From terminal, type <code>sudo pip install virtualenv</code> wait until completed.</li>
+<li>Next, type <code>sudo pip install virtualenvwrapper</code> wait until completed.</li>
+<li>Next, type <code>export WORKON_HOME=~/Envs</code>. This will place all your virtualenv
+under your <code>HOME_DIRECTORY/Envs</code></li>
+<li>Next, type <code>echo 'export WORKON_HOME=~/Envs' &gt;&gt; ~/.zshrc</code></li>
+<li>Next, type <code>echo 'source /usr/local/bin/virtualenvwrapper.sh' &gt;&gt; ~/.zshrc</code></li>
+<li>Next, type <code>mkdir -p $WORKON_HOME</code></li>
+<li>Next, type <code>source /usr/local/bin/virtualenvwrapper.sh</code></li>
+</ol>
 <h3 id="test-virtualenv-virtualenvwrapper">Test virtualenv &amp; virtualenvwrapper</h3>
 <ol>
 <li>Open new terminal session and type <code>mkvirtualenv myproject</code>.
