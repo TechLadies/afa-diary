@@ -17,3 +17,5 @@ We are using [MkDocs](http://www.mkdocs.org) to create and organize this diary. 
 1. Stage the changed files: `git add .`
 1. Commit to git: `git commit -m "Your descriptive message"`
 1. Push to Github repo: `git push -u origin master`
+
+The webpage link for this page is [http://techladies.github.io/afa-diary/](http://techladies.github.io/afa-diary/)
