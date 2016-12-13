@@ -12,7 +12,7 @@ We are using [MkDocs](http://www.mkdocs.org) to create and organize this diary. 
 1. Change your directory to afa-diary: `cd afa-diary`
 1. Create Virtualenv named mkdocs: `mkvirtualenv mkdocs`
 1. Install MkDocs and other requirements using pip: `pip install -r requirements.txt`
-1. At this point, you can preview your local MkDocs site by running server command: `mkdocs server`. You should see something like this and then use browser to go to [http://localhost:8000](http://localhost:8000) ![Screenshot](http://i.imgur.com/UePJaxN.png)
+1. At this point, you can preview your local MkDocs site by running server command: `mkdocs serve`. You should see something like this and then use browser to go to [http://localhost:8000](http://localhost:8000) ![Screenshot](http://i.imgur.com/UePJaxN.png)
 1. Make your changes locally and use localhost to preview the changes. Remember to add your page name and corresponding .md file to `mkdocs.yml`
 1. Stage the changed files: `git add .`
 1. Commit to git: `git commit -m "Your descriptive message"`
