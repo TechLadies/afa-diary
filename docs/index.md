@@ -17,7 +17,7 @@ you already have a clone, pull the latest changes: `git pull`
 1. Install MkDocs and other requirements using pip:
 `pip install -r requirements.txt`
 1. At this point, you can preview your local MkDocs site by running
-server command: `mkdocs server`.
+server command: `mkdocs serve`.
 You should see something like this and then use browser to go to
 [http://localhost:8000](http://localhost:8000)
 
@@ -34,3 +34,4 @@ Remember to add your page name and corresponding .md file to `mkdocs.yml`
 1. [Basic writing and formatting syntax - Github](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 1. [Creating and highlighting code blocks - GitHub](https://help.github.com/articles/creating-and-highlighting-code-blocks/)
 1. [Advanced formatting - Github](https://help.github.com/articles/working-with-advanced-formatting/)
+1. The webpage link for this page is [http://techladies.github.io/afa-diary/](http://techladies.github.io/afa-diary/)
